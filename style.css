@@ -454,6 +454,7 @@ nav{
 .contact{
     min-height: 100vh;
     font-family: var(--secondary-font);
+    margin-top: 50px;
 }
 .brand{
     /* font-family: var(--secondary-font); */
@@ -464,10 +465,120 @@ nav{
     /* font-family: var(--secondary-font); */
     word-spacing: 2px;
     line-height: 1.5;
+    max-width: 90%;
+    color: lightslategrey;
 }
 .mission{
     /* background-color: aqua; */
-    padding: 20px;
+    padding-left: 6%;
+    margin-bottom: 30px;
+    flex-basis: 80%;
 }
+.contact-details{
+    /* background-color: blue; */
+    padding-right: 6%;
+}
+.contact-details p i{
+    color: rgb(93, 194, 244);
+    font-size: 30px;
+    margin-right: 10px;
+}
+.contact-details p{
+    margin-bottom: 20px;
+    color: lightslategrey;
+}
+.contact-us{
+    /* background-color: blue; */
+    /* padding:0 8%; */
+    flex-basis: 80%;
+}
+.contact-us .name, .your-email, .subject{
+    height: 40px;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+}
+.name input, .your-email input, .subject input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    outline: none;
+}
+.contact-us .textareaa textarea{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    resize: vertical;
+    outline: none;
+    margin-bottom: 20px;
+}
+.msg-btn{
+    height: 40px;
+    /* background-color: aqua; */
+    width: 180px;
+    /* border-radius: 20px; */
+    margin: auto;
+}
+.msg-btn button{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    /* border: none; */
+    border-radius: 20px;
+    border: 1px solid rgb(93, 194, 244) ;
+    background-color: rgb(93, 194, 244);
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    color: #fff;
+}
+input::placeholder{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    color: lightslategray;
+}
+textarea::placeholder{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    color: lightslategray;
+}
+.details{
+    display: flex;
+    margin-top: 50px;
+}
+@media screen and (max-width: 768px){
+    .details{
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+    }
+    .mission{
+        flex-basis: 50%;
+    }
+    .contact-details{
+        flex-basis: 50%;
+    }
+    .contact-us{
+        flex-basis: 100%;
+    }
 
+}
+@media screen and (max-width: 767px){
+    .details{
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+    }
+    .mission{
+        flex-basis: 100%;
+        padding-left: 10%;
+    }
+    .contact-details{
+        flex-basis: 100%;
+        padding-left: 10%;
+        padding-right: 6%;
+    }
+    .contact-us{
+        flex-basis: 100%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
 
+}
